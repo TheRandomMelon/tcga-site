@@ -1,0 +1,24 @@
+---
+title: News
+desc: The latest news for TRM Community Game Awards.
+description: The latest news for TRM Community Game Awards.
+layout: default
+---
+
+<div class="card">
+	<h1>News</h1>
+	<div class="flex flex-col space-y-4 mt-4">
+		{% for post in site.posts %}
+        <a href="{{ post.url }}">
+            <div class="flex sm:flex-row flex-col w-full">
+                <img src="{{ post.image }}" class="news-image" aria-hidden="true" class="mb-4" />
+                <div class="flex flex-col pt-4 sm:p-8 justify-center text-left">
+                    <h2>{{ post.title }}</h2>
+                    <p>{{ post.desc }}</p>
+                    <p class="text-gray-400 mt-4">Posted on {{ post.date | date: '%B %d, %Y' }}</p>
+                </div>
+            </div>
+        </a>
+		{% endfor %}
+	</div>
+</div>

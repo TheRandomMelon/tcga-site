@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+<body>
+	<!-- Fixes Firefox bug -->
+	<script>0</script>
+	
+	<div class="flex flex-col space-y-4 sm:space-y-0 sm:flex-row sm:space-x-4 nav p-4 items-center justify-center">
+		<a href="/about">About</a>
+		<a href="/news">News</a>
+		<a href="/winners">Winners</a>
+		<a href="/voting">Voting</a>
+		<a href="/faq">FAQ</a>
+	</div>
+
+	<div class="flex mx-auto container flex-col items-center">
+		<a href="/">
+			<img src="/img/logo.png" alt="Daydream Studio Logo" class="logo" />
+		</a>
+		{{ content }}
+	</div>
+</body>
+</html>

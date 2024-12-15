@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+<body>
+	<!-- Fixes Firefox bug -->
+	<script>0</script>
+	
+	<div class="flex flex-col space-y-4 sm:space-y-0 sm:flex-row sm:space-x-4 nav p-4 items-center justify-center">
+		<a href="/about">About</a>
+		<a href="/news">News</a>
+		<a href="/winners">Winners</a>
+		<a href="/voting">Voting</a>
+		<a href="/faq">FAQ</a>
+	</div>
+
+	<div class="flex mx-auto container flex-col items-center">
+		<a href="/">
+			<img src="/img/logo.png" alt="Daydream Studio Logo" class="logo" />
+		</a>
+        <div class="card left">
+            <div class="flex sm:flex-row flex-col">
+                <img src="{{ page.image }}" class="news-image" aria-hidden="true" class="mb-4" />
+                <div class="flex flex-col pt-4 sm:p-8 justify-center">
+                    <h2>{{ page.title }}</h2>
+                    <p>{{ page.desc }}</p>
+                    <p class="text-gray-400 mt-4">Posted on {{ page.date | date: '%B %d, %Y' }}</p>
+                </div>
+            </div>
+        </div>
+        <div class="card left">
+            {{ content }}
+        </div>
+	</div>
+</body>
+</html>

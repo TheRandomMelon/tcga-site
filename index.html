@@ -1,0 +1,42 @@
+---
+title: Home
+desc: A game award show that not only awards the present and the past, but also lets the audience decide.
+description: A game award show that not only awards the present and the past, but also lets the audience decide.
+layout: default
+---
+
+<div class="card">
+	<h1>About The Show</h1>
+	<p>
+		The TRM Community Game Awards 2024 is a game award show presented by Michael Webb, aka “TheRandomMelon”, on his Twitch channel, <a class="card-link" href="https://twitch.tv/therandommelon">twitch.tv/therandommelon</a>. The goal of the show is to allow the audience to truly run the show by allowing winners to be chosen by the audience (from a select number of candidates decided by the TRM Community Game Awards Nomination Committee).
+		<br><br>
+		Participate with the community and get announcements first on the <a class="card-link" href="https://discord.gg/bhVkwgCDtZ">TRM Community Discord server</a>!
+		<br><br>
+		Learn more about the selection process and the Nomination Committee below.
+	</p>
+	<a href="/about">
+		<button class="mt-4">
+			Learn More
+		</button> 
+	</a>
+</div>
+
+<div class="card">
+	<h1>News</h1>
+	<div class="flex flex-col space-y-6 sm:space-y-0 sm:flex-row sm:space-x-6 mt-4">
+		{% for post in site.posts limit:4 %}
+		<div class="news-item flex sm:w-1/4">
+			<a href="{{ post.url }}">
+				<img src="{{ post.image }}" aria-hidden="true" class="mb-4" />
+				<h2>{{ post.title }}</h2>
+				<p>{{ post.desc }}</p>
+			</a>
+		</div>
+		{% endfor %}
+	</div>
+	<a href="/news">
+		<button class="mt-4">
+			Read More News
+		</button>
+	</a>
+</div>

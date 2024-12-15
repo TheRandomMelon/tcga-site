@@ -1,0 +1,233 @@
+/* Variable declaration */
+:root {
+    --brand-color: #ff6d85;
+    --dark-brand-color: #8E1428;
+    --link-color: #ff4766;
+    --sky-gradient: linear-gradient(135deg, #FC617B 0%, #8E1428 100%) fixed;
+    --dark-gradient: linear-gradient(180deg, #8E1428 0%, #701121 100%);
+    --text-color: #eeeeee;
+    --shading: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    /* Socials */
+    --bluesky: #208bfe;
+    --linkedin: #0a66c2;
+    --instagram: #E1306C;
+    --youtube: red;
+    --twitch: #9146ff;
+}
+
+body {
+    background: var(--sky-gradient);
+    color: var(--text-color);
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.3;
+}
+
+.logo {
+    width: 450px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    transition: all 200ms ease;
+    margin: 28px 0;
+}
+
+.logo:hover {
+    filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.25));
+}
+
+.ga-shadow {
+    box-shadow: var(--shading);
+}
+
+.card {
+    background: var(--dark-gradient);
+    box-shadow: var(--shading);
+    border-radius: 6px;
+    padding: 24px;
+
+    text-align: center;
+    margin-bottom: 24px;
+    width: 100%;
+}
+
+.inner-card b {
+    color: var(--brand-color);
+}
+
+.inner-card {
+    background: #640c1b;
+    box-shadow: var(--shading);
+    border-radius: 5px;
+}
+
+.card-link {
+    color: var(--link-color);
+    transition: all 200ms ease;
+}
+
+.card-link:hover {
+    color: var(--brand-color);
+}
+
+.card.left {
+    text-align: left !important;
+}
+
+.news-image {
+    width: 300px;
+    box-shadow: var(--shading);
+    border-radius: 5px;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 24px;
+    color: var(--brand-color);
+    margin-bottom: 8px;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--text-color);
+    margin-bottom: 4px;
+}
+
+/* Socials */
+.socials {
+    font-size: 36px;
+    margin-top: 16px;
+}
+
+.socials i {
+    margin-right: 14px;
+}
+
+.socials i.fa-x-twitter, .socials i.fa-instagram {
+    font-size: 42px;
+}
+
+.socials a i {
+    transition: all 200ms ease;
+}
+
+/* Socials nomination committee */
+.socials-nom {
+    font-size: 24px;
+    margin-top: 16px;
+}
+
+.socials-nom i {
+    margin-right: 10px;
+}
+
+.socials-nom i.fa-x-twitter, .socials-nom i.fa-instagram {
+    font-size: 30px;
+}
+
+.socials-nom a i {
+    transition: all 200ms ease;
+}
+
+.socials-generic:hover i {
+    color: var(--brand-color);
+}
+
+.socials-bluesky:hover i {
+    color: var(--bluesky);
+}
+
+.socials-linkedin:hover i {
+    color: var(--linkedin);
+}
+
+.socials-instagram:hover i {
+    color: var(--instagram);
+}
+
+.socials-youtube:hover i {
+    color: var(--youtube);
+}
+
+.socials-twitch:hover i {
+    color: var(--twitch);
+}
+
+/* Homepage */
+.team-member img {
+    border-radius: 50%;
+    box-shadow: var(--shading);
+    width: 64px;
+    height: 64px;
+}
+
+.team-member div {
+    margin-left: 22px;
+}
+
+button {
+    background: var(--brand-color);
+    box-shadow: var(--shading);
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-weight: bold;
+    width: fit-content;
+    transition: all 200ms ease;
+}
+
+button:hover {
+    background: var(--dark-brand-color);
+}
+
+.team-member button {
+    margin-top: 10px;
+}
+
+.team .team-member:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+/* Team Page */
+.team-page-member img {
+    border-radius: 50%;
+    box-shadow: var(--shading);
+    width: 96px;
+    height: 96px;
+}
+
+.team-page-member div {
+    margin-left: 24px;
+}
+
+.team-page-member h1 {
+    color: var(--text-color);
+}
+
+.nav {
+    background: var(--dark-gradient);
+    box-shadow: var(--shading);
+    color: white;
+    font-weight: bold;
+}
+
+.nav a {
+    transition: all 200ms ease;
+}
+
+.nav a:hover {
+    color: var(--brand-color);
+}
+
+.news-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.news-item img {
+    border-radius: 5px;
+    box-shadow: var(--shading);
+}
+
+.news-item-list {
+    border-radius: 5px;
+    box-shadow: var(--shading);
+}

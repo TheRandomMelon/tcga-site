@@ -1,0 +1,36 @@
+title: TRM Community Game Awards
+email: michael@therandommelon.com
+description: A game award show that not only awards the present and the past, but also lets the audience decide.
+baseurl: ""
+url: https://gameawards.therandommelon.com
+urlnp: gameawards.therandommelon.com
+desc: A game award show that not only awards the present and the past, but also lets the audience decide.
+permalink: /news/:year/:title
+
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-last-modified-at
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - package.json
+  - package-lock.json
+  - README.md
+  - LICENSE
+  - tailwind.config.js
+
+# collections:
+#   team:
+#     output: true
+#     sort_by: sorter
+#     permalink: /team/:name
+
+# defaults:
+#   - scope:
+#       path: ""
+#       type: "team"
+#     values:
+#       layout: "team"
