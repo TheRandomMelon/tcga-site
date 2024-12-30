@@ -7,6 +7,9 @@ keywords: game awards, trm community, therandommelon
 id: voting-open-2024
 desc: Read more about the voting period and how to vote.
 ---
+# UPDATE - 12/29/2024
+Voting for 2024 closed on December 28, 2024. However, the original content of this post has been preserved below for archival.
+
 # How Voting Works
 Before voting occurs, categories and nominees must be decided. Nominations are decided by the [TRM Community Game Awards Nomination Committee](/about). The Committee takes into account several factors, such as popularity amongst gamers on various social media platforms, the nominations made by The Game Awards (if applicable), and their own personal experiences with the game.
 <br><br>
